@@ -11,6 +11,7 @@ public class lru{
         int page_faults = 0;
 
         for(int i = 0; i < n_pages; i++ ){
+            System.out.println("Frame : " + s);
             if(s.size() < frame_size){
                 if(!s.contains(pages[i])){
                     s.add(pages[i]);
